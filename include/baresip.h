@@ -178,6 +178,9 @@ struct config_sip {
 	char uuid[64];          /**< Universally Unique Identifier  */
 	char local[64];         /**< Local SIP Address              */
 	char cert[256];         /**< SIP Certificate                */
+	uint32_t timer_t1;      /**< SIP Transaction Timer T1 [ms]  */
+	uint32_t timer_t2;      /**< SIP Transaction Timer T2 [ms]  */
+	uint32_t timer_t4;      /**< SIP Transaction Timer T4 [ms]  */
 };
 
 /** Call config */
